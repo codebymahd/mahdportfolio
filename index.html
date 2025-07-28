@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahd's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!-- AOS Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("neq6eWIiStXhLpVm3"); // replace this
+  })();
+</script>
+
+
+</head>
+<body>
+  <!-- ======= Header / Navbar ======= -->
+  <header>
+    <nav class="nav-bar">
+        <a href="#" class="logo" id="logo">
+  <i class="fas fa-code"></i> <span class="logo-name">Mahd's</span><span class="logo-dot">.Portfolio</span>
+</a>
+     <!-- <a href="#" class="logo" id="logo">
+  <span class="logo-name">Mahd's</span><span class="logo-dot">.Portfolio</span>
+</a> -->
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li class="theme-btn" id="theme-toggle">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <!-- ======= Hero Section ======= -->
+  <section class="hero" id="home">
+    <div class="hero-wrapper">
+      <div class="hero-left">
+        <h1>Hi, My name is <span class="accent">Mahd..!!</span></h1>
+        <div class="typewriter"><span>and I am a passionate Web Developer.</span></div>
+        <h2><span id="typed-text"></span></h2>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+        <div class="social">
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://fiverr.com/" target="_blank"><i class="fas fa-briefcase"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="image-circle">
+          <img src="img2.png" alt="Mahd's Picture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+  <div class="scroll-down">
+  <i class="fas fa-angle-down"></i>
+   </div>
+
+<!-- ======= About Me Section ======= -->
+<section class="about" id="about">
+  <div class="about-container">
+    <h2 class="section-title">About Me</h2>
+
+    <blockquote class="about-quote">
+      "Turning ideas into interactive and aesthetic digital experiences."
+    </blockquote>
+
+    <p class="about-text">
+      I'm Mahd, a passionate and creative web developer from Karachi, Pakistan. I love crafting responsive, user-friendly, and AI-enhanced websites using HTML, CSS, JavaScript, and modern tools.
+    </p>
+
+    <!-- <div class="about-illustration">
+      <img src="https://storyset.com/illustration/web-developer/amico" alt="About illustration">
+    </div> -->
+
+    <h3 class="skills-title">My Skills</h3>
+    <div class="skills-bars">
+      <div class="skill-bar">
+        <p>HTML</p>
+        <div class="bar"><div class="fill" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <p>CSS</p>
+        <div class="bar"><div class="fill" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <p>JavaScript</p>
+        <div class="bar"><div class="fill" style="width: 80%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <p>Git</p>
+        <div class="bar"><div class="fill" style="width: 75%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <p>AI Tools</p>
+        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ======= Projects Section ======= -->
+<section class="projects" id="projects">
+  <div class="projects-container">
+    <h2 class="section-title">My Projects</h2>
+
+    <!-- Filter Buttons -->
+<div class="filter-buttons">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="web">Web</button>
+  <!-- <button class="filter-btn" data-category="ai">AI</button> -->
+  <button class="filter-btn" data-category="js">JavaScript</button>
+</div>
+
+<!-- Project Cards -->
+<div class="projects-grid">
+  <div class="project-card" data-category="web" data-aos="fade-up">
+    <!-- <img src="https://via.placeholder.com/400x200" alt="Project 1"> -->
+    <h3>Portfolio Website</h3>
+    <p>Responsive website built using HTML, CSS, JavaScript.</p>
+    <div class="project-buttons">
+      <!-- <a href="#" class="btn">Live Demo</a> -->
+       <a href="https://mahdportfolio.netlify.app" target="_blank" class="btn">Live Demo</a>
+      <a href="#" class="btn btn-outline">Code</a>
+    </div>
+  </div>
+
+  <div class="project-card" data-category="ai" data-aos="fade-up">
+    <!-- <img src="https://via.placeholder.com/400x200" alt="Project 2"> -->
+    <h3>AI Blog Generator</h3>
+    <p>AI-powered blog with auto content generation using OpenAI tools.</p>
+    <div class="project-buttons">
+      <a href="#" class="btn">Live Demo</a>
+      <a href="#" class="btn btn-outline">Code</a>
+    </div>
+  </div>
+
+  <div class="project-card" data-category="js" data-aos="fade-up">
+    <!-- <img src="https://via.placeholder.com/400x200" alt="Project 3"> -->
+    <h3>Typing Game</h3>
+    <p>Fun JavaScript typing speed game with timer and scoreboard.</p>
+    <div class="project-buttons">
+      <a href="https://typingame-js.netlify.app" target="_blank" class="btn">Live Demo</a>
+      <a href="#" class="btn btn-outline">Code</a>
+    </div>
+  </div>
+</div>
+
+      <div class="project-card">
+        <!-- <img src="https://via.placeholder.com/400x200" alt="Project 2"> -->
+        <h3>Landing Page</h3>
+        <p>Beautiful landing page design using CSS animations and mobile-first responsiveness.</p>
+        <div class="project-buttons">
+          <a href="https://coffeebrand-landingpage.netlify.app" class="btn" target="_blank">Live Demo</a>
+          <a href="#" class="btn btn-outline">Code</a>
+        </div>
+      </div>
+
+      <!-- <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 3">
+        <h3>AI-Powered Blog</h3>
+        <p>Blog layout with AI-generated content, using modern JS and smooth scrolling.</p>
+        <div class="project-buttons">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn btn-outline">Code</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+<div class="section-divider"></div>
+
+<!-- ======= Contact Me Section ======= -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Contact Me</h2>
+
+    <!-- ✅ Contact Form (EmailJS-enabled) -->
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="from_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit" class="btn" id="send-btn">
+        Send Message
+        <span id="spinner"></span>
+      </button>
+    </form>
+
+    <!-- ✅ Popup Confirmation -->
+    <div id="success-popup">✅ Message sent successfully!</div>
+
+    <!-- ✅ Contact Info -->
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> mahd.dev@email.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+      <a href="https://wa.me/923312216101?text=Hi%20Mahd!%20I%20just%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" class="btn btn-outline">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+
+    <!-- ✅ Social Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://fiverr.com/" target="_blank"><i class="fas fa-briefcase"></i></a>
+    </div>
+  </div>
+</section>
+</main>
+
+ <!-- ======= Footer ======= -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Mahd. All Rights Reserved.</p>
+    <p>Made with ❤️ using <strong>HTML, CSS, JavaScript & AI</strong></p>
+  </div>
+
+  <a href="#home" class="back-to-top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</footer>
+
+</body>
+</html>
