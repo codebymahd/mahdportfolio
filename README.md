@@ -10,4 +10,4 @@
 - HTML
 - CSS
 - JavaScript
-
+- AI
